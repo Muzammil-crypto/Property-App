@@ -10,7 +10,7 @@ class CustomAppBar extends StatelessWidget {
       padding: const EdgeInsets.only(
         left: appPadding,
         right: appPadding,
-        top: appPadding ,
+        top: appPadding,
       ),
       child: Container(
         height: size.height * 0.1,
@@ -18,7 +18,7 @@ class CustomAppBar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             InkWell(
-              onTap: (){
+              onTap: () {
                 Navigator.pop(context);
               },
               child: Container(
@@ -26,9 +26,11 @@ class CustomAppBar extends StatelessWidget {
                 width: 50,
                 decoration: BoxDecoration(
                     border: Border.all(color: white.withOpacity(0.4)),
-                    borderRadius: BorderRadius.circular(15)
+                    borderRadius: BorderRadius.circular(15)),
+                child: Icon(
+                  Icons.arrow_back_rounded,
+                  color: white,
                 ),
-                child: Icon(Icons.arrow_back_rounded,color: white,),
               ),
             ),
             Container(
@@ -36,9 +38,11 @@ class CustomAppBar extends StatelessWidget {
               width: 50,
               decoration: BoxDecoration(
                   border: Border.all(color: white.withOpacity(0.4)),
-                  borderRadius: BorderRadius.circular(15)
+                  borderRadius: BorderRadius.circular(15)),
+              child: Icon(
+                Icons.favorite_border_rounded,
+                color: white,
               ),
-              child: Icon(Icons.favorite_border_rounded,color: white,),
             ),
           ],
         ),

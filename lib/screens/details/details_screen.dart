@@ -6,7 +6,6 @@ import 'package:real_estate_app/screens/details/components/custom_app_bar.dart';
 import 'package:real_estate_app/screens/details/components/house_details.dart';
 
 class DetailsScreen extends StatefulWidget {
-
   final House house;
 
   const DetailsScreen({Key key, this.house}) : super(key: key);
